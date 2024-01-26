@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html data-theme="dark">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" id="rels" href="./styles/settings.css">
+  <link rel="stylesheet" href="./styles/cursors.css">
+</head>
+
+  <body style="background:#1e1e1e;color:white;text-align:center;font-family: 'Roboto', sans-serif;">
+    <script>
+      function sideload() {
+        if (atitle.value) {
+        var acon = confirm("Warning: If the app preview failed to load, either this app is incompatible or you typed the wrong URL. Are you sure you want to continue?")
+        if (acon == true) {
+          addapp(aurl.value,atitle.value,imgurl.value)
+        }
+        } else {
+          alert("No Title")
+        }
+      }
+    </script>
+    <script src="appinst.js"></script>
+    <h1><u>Sideload App</u></h1>
+    <iframe id="prevf" style="margin:auto;border: 1px solid white;"></iframe>
+    <p>&nbsp;</p>
+    <div class="btns" style="margin:auto"><input class="btn input" placeholder="App URL" id="aurl" onkeyup="prevf.src = this.value" onchange="prevf.src = this.value;"> | <input class="btn input" id="imgurl" placeholder="Icon URL" /> | <input class="btn input" id="atitle" placeholder="App Title">
+    <br>
+    <button class="btn" onclick="sideload()" style="cursor:pointer;display:block;">Install</button>
+  </div>
+  <script src="./js/theme.js"></script>
+  </body>
+</html

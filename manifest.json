@@ -1,0 +1,27 @@
+{
+  "background_color": "#000000",
+  "description": "An operation system right in your browser.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "White Market OS",
+  "orientation": "any",
+  "scope": "/whitemarket/static",
+  "short_name": "White Market OS",
+  "start_url": "/whitemarket/static",
+  "theme_color": "#000000",
+  "categories": [],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "500x500"
+    },
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [],
+  "id": "wmosui"
+}

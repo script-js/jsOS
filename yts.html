@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>YouTube Simplified</title>
+  <link rel="icon" href="https://ytadblock.script-js.repl.co/icon-fav.png" />
+  <link href="https://script-js.github.io/js-css/darkice.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body style="text-align: center;">
+    
+    <img src="https://ytsimplified.pages.dev/icon-hp.png" style="margin:auto;" width="300" />
+    <h1>YouTube Simplified</h1>
+    <h3>Experience a simple ad-free YouTube player</h3>
+    <input id="rediri" placeholder="Youtube URL" /><button onclick="convert(rediri.value)">Go</button>
+    <script>
+      function convert(item) {
+        var filter1 = item.replace("www.youtube.com/watch?v=","www.youtube-nocookie.com/embed/")
+        var filter2 = filter1.replace("youtu.be/","www.youtube-nocookie.com/embed/")
+location.replace(filter2.replace("youtube.com/watch?v=","youtube-nocookie.com/embed/"))
+      }
+    </script>
+  </body>
+
+</html>
+  
