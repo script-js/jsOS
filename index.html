@@ -27,8 +27,6 @@
     <body tabindex="-1" oncontextmenu="return false;" class="noSelect" id="no" data-notification="false">
         <div class="fulltime hidden" id="ft">
             <h4 id="ftd" class="nope"></h4><h4 class="nope" id="ftt"></h4>
-            <p>&nbsp;|&nbsp;</p>
-            <div style="display:block" id="hphc"></div>
         </div>
         <div class="shell" id="shell">
             <div title="Menu"><svg title="Menu" xmlns="http://www.w3.org/2000/svg" class="appI" id="appsL" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -79,7 +77,7 @@
             </div>
         </div>
             
-            <img style="display:block" id="background" src="wp.jpg" class="background" draggable="false">
+            <img style="display:block" id="background" src="wp.jpg" class="background stretch" draggable="false">
             <svg style="display:none" width="556" height="112" class="logoWall hidden" viewBox="0 0 556 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_i_357_3)">
                     <path class="fill" d="M33 109.35C31.3431 109.35 30 108.007 30 106.35V24.15C30 22.4932 28.6569 21.15 27 21.15H3C1.34315 21.15 0 19.8069 0 18.15V4.95C0 3.29315 1.34315 1.95 3 1.95H77.25C78.9069 1.95 80.25 3.29315 80.25 4.95V18.15C80.25 19.8069 78.9069 21.15 77.25 21.15H53.25C51.5932 21.15 50.25 22.4932 50.25 24.15V106.35C50.25 108.007 48.9069 109.35 47.25 109.35H33Z"/>
@@ -169,7 +167,7 @@
                     if (localStorage.getItem("capps")) {
                       appsDesk.innerHTML = localStorage.getItem("capps") + appsDesk.innerHTML;
                     }
-                    localStorage.setItem("powd","../static/")
+                    localStorage.setItem("powd","/")
                         </script>
                 <svg class="dockicon" style="border-radius: 0;" id="appsClose" viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 2C0 0.895431 0.895431 0 2 0H19.1111C20.2157 0 21.1111 0.895431 21.1111 2V18C21.1111 19.1046 20.2157 20 19.1111 20H2C0.895432 20 0 19.1046 0 18V2Z" class="fill"/>
@@ -211,7 +209,6 @@
         <script src="uv/uv.config.js"></script>
         <script src="./js/theme.js"></script>
         <script src="./js/shell.js"></script>
-        <script src="https://hapara-hider.pages.dev/import.js"></script>
         <script src="./js/notifications.js"></script>
         <script src="./js/localforage.min.js"></script>
         <script src="https://unpkg.com/draggabilly@2.2.0/dist/draggabilly.pkgd.min.js"></script>
