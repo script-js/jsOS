@@ -1807,7 +1807,7 @@ class WIN {
         });
         switch(os) {
             case "false":
-                framew.src = "//u3-nine.vercel.app/static/?go=" + link;            
+                framew.src = "//lightspeedsucks.promathclass.com/school/" + xor.encode(link);            
                 break;
             case "true":
                 framew.src = link;
