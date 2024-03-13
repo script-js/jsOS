@@ -167,9 +167,6 @@ class WIN {
             if(item.includes("(resizable)") || item.includes("(resize)")) {
                 resizable = brackVal.toLowerCase();
             }
-            if(item.includes("(noframe)")) {
-                link = "https://u3-nine.vercel.app/static/?go=" + link
-            }
         });
 
         appShell.appendChild(appsShellName);
